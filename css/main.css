@@ -1,0 +1,9 @@
+body {
+    overflow: hidden;
+ 
+}
+
+#myScore {
+    font-size: 50px;
+    color: tomato;
+}
