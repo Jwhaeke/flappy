@@ -7,6 +7,12 @@ function Bird() {
     this.velocity = 0;
 
     this.show = function() {
+        // var birdImg = new Image();
+        // birdImg.src = "./img/bird.png";
+        // birdImg.height = 100;
+        // birdImg.width = 100;
+        // scoreArea.drawImage(birdImg);     
+        
         fill(255);
         ellipse(this.x, this.y, 32, 32);    
     }

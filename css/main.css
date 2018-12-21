@@ -7,3 +7,50 @@ body {
     font-size: 50px;
     color: tomato;
 }
+
+.filler {
+    height: 700px;
+}
+
+/* Slider appearance from w3schools */
+
+#slider {
+    color: tomato;
+    font-size: 35px;
+}
+
+.slidecontainer {
+    width: 100%; 
+}
+
+.slider {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 50%; 
+    height: 25px; 
+    background: #d3d3d3; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1; 
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    background: tomato;
+    cursor: pointer; 
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px; 
+    height: 25px; 
+    background: tomato; 
+    cursor: pointer; 
+}

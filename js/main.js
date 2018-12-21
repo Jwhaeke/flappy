@@ -3,12 +3,14 @@ var pipes =[];
 var score = 0;
 var scoreArea;
 
-
+// slider variables
+// var slider = document.getElementById("slide");
+// var output = document.getElementById("demo");
+// output.innerHTML = slider.value;
 
 function setup() {
     score = 0;
     createCanvas(1200, 600);
-
     bird = new Bird();
     pipes.push(new Pipe());
 }
@@ -18,7 +20,6 @@ function draw() {
 
     scoreArea = document.getElementById("myScore");
     scoreArea.innerHTML = "Your score: " + score;
-    console.log(score);
 
     for (var i = pipes.length-1; i >= 0; i--) {
         pipes[i].show();
@@ -53,10 +54,17 @@ function draw() {
     
 }
 
-
 function keyPressed() {
     if (key == ' ') {
         bird.up();    
         // console.log("space");
     }
 }
+
+// Slider function (taken from w3schools)
+ // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+// slider.oninput = function() {
+//     output.innerHTML = this.value;
+// }
